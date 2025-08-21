@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex VueJS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FF7F32;
+      text-align: center;
+      padding: 20px;
+    }
+    .pokemon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .pokemon-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      width: 120px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .pokemon-box img {
+      width: 80px;
+      height: 80px;
+    }
+    .pokemon-box h4 {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokédex VueJS</h1>
+  <div class="pokemon-container">
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+      <h4>Bulbasaur</h4>
+    </div>
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur">
+      <h4>Ivysaur</h4>
+    </div>
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
+      <h4>Venusaur</h4>
+    </div>
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+      <h4>Charmander</h4>
+    </div>
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon">
+      <h4>Charmeleon</h4>
+    </div>
+    <div class="pokemon-box">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard">
+      <h4>Charizard</h4>
+    </div>
+  </div>
+</body>
+</html>
