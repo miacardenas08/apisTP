@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokédex VueJS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #FF7F32;
-      text-align: center;
-      padding: 20px;
-    }
-    .pokemon-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    .pokemon-box {
-      background-color: white;
-      border-radius: 10px;
-      padding: 10px;
-      width: 120px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .pokemon-box img {
-      width: 80px;
-      height: 80px;
-    }
-    .pokemon-box h4 {
-      font-size: 16px;
-      margin-top: 10px;
-      color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <style>
+    body {
+  background-color: #ff7f2a;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 40px 0 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px;
+  max-width: 550px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  padding: 5px;
+}
+.h2{
+  font-size: 400px;
+}
+  </style>
   <h1>Pokédex VueJS</h1>
-  <div class="pokemon-container">
-    <div class="pokemon-box">
+  
+  <div class="grid-container">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
-      <h4>Bulbasaur</h4>
+      <h2><p><strong>Bulbasaur</strong></p></h2>
     </div>
-    <div class="pokemon-box">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur">
-      <h4>Ivysaur</h4>
+      <h2><p><strong>Ivysaur</strong></p></h2>
     </div>
-    <div class="pokemon-box">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
-      <h4>Venusaur</h4>
+      <h2><p><strong>Venusaur</strong></p></h2>
     </div>
-    <div class="pokemon-box">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
-      <h4>Charmander</h4>
+      <h2><p><strong>Charmander</strong></p></h2>
     </div>
-    <div class="pokemon-box">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon">
-      <h4>Charmeleon</h4>
+      <h2><p><strong>Charmeleon</strong></p></h2>
     </div>
-    <div class="pokemon-box">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard">
-      <h4>Charizard</h4>
+      <h2><p><strong>Charizard</strong></p></h2>
     </div>
   </div>
 </body>
